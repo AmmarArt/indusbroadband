@@ -7,28 +7,28 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fdf6e3;
+      background: linear-gradient(to bottom right, #f9f9ff, #dbe9ff);
       padding: 20px;
-      color: #333;
+      color: #1a1a1a;
     }
     h1 {
       text-align: center;
-      color: #000;
+      color: #005baa;
     }
     .logo-header {
       display: flex;
       justify-content: center;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
     .logo-header img {
       height: 80px;
     }
     .payment-box {
-      background: #fff8dc;
+      background: rgba(255, 255, 255, 0.9);
       padding: 20px;
       margin: 15px auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       max-width: 500px;
     }
     .logo {
@@ -37,15 +37,18 @@
       margin-right: 10px;
     }
     .copy-btn {
+      display: block;
       background: #007bff;
       color: white;
       border: none;
-      padding: 6px 12px;
-      border-radius: 4px;
+      padding: 10px 18px;
+      border-radius: 25px;
       cursor: pointer;
-      margin-top: 5px;
+      margin: 15px auto 0;
+      font-size: 14px;
+      transition: background 0.3s ease;
     }
-    .copy-btn:active {
+    .copy-btn:hover {
       background-color: #0056b3;
     }
     .account-section {
@@ -55,7 +58,7 @@
 </head>
 <body>
   <div class="logo-header">
-    <img src="8a24a598-c6e5-42d1-9e99-0973a6eb027f.png" alt="Indus Broadband Logo">
+    <img src="https://media.licdn.com/dms/image/v2/D4D0BAQHEUXozFZA5kA/company-logo_200_200/B4DZhIVOLhHAAI-/0/1753560179925?e=1757548800&v=beta&t=wOqt-azp9ffUctD3Qm0iKsY9r5ZIXY4zUKmhOq-qX9o" alt="Indus Broadband Logo">
   </div>
   <h1>Indus Broadband Payment Methods</h1>
 
@@ -65,7 +68,7 @@
     <div class="account-section">
       <p><strong>Account Title:</strong> Indus Broadband Pvt Ltd</p>
       <p><strong>Account Number:</strong> <span id="bank-account">029020011769587</span></p>
-      <button class="copy-btn" onclick="copyText('bank-account')">Copy</button>
+      <button class="copy-btn" onclick="copyText('bank-account')">Copy Account Number</button>
     </div>
   </div>
 
@@ -75,7 +78,7 @@
     <div class="account-section">
       <p><strong>Account Title:</strong> Numan Ali</p>
       <p><strong>Account Number:</strong> <span id="jazz-account">03314477397</span></p>
-      <button class="copy-btn" onclick="copyText('jazz-account')">Copy</button>
+      <button class="copy-btn" onclick="copyText('jazz-account')">Copy Account Number</button>
     </div>
   </div>
 
@@ -85,7 +88,7 @@
     <div class="account-section">
       <p><strong>Account Title:</strong> Numan Ali</p>
       <p><strong>Account Number:</strong> <span id="easy-account">03314477397</span></p>
-      <button class="copy-btn" onclick="copyText('easy-account')">Copy</button>
+      <button class="copy-btn" onclick="copyText('easy-account')">Copy Account Number</button>
     </div>
   </div>
 
